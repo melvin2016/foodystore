@@ -16,6 +16,8 @@
     padding: 10px 15px;
     font-size: 18px;
     min-width: 200px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .text-center{

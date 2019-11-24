@@ -22,3 +22,13 @@
 #nav .nav-item .active{
     border-bottom: 2px solid #F8A22F;
 }
+
+@media screen and (max-width: 568px){
+    #nav .nav-item .nav-link{
+        color: #000;
+    }
+    #nav .nav-item .nav-btn{
+        display: inline-block;
+        text-align: center;
+    }
+}

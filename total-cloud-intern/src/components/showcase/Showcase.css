@@ -1,9 +1,7 @@
 #showcase{
     height: 80vh;
 }
-#showcase .showcase-content{
-    padding-right: 100px;
-}
+
 #showcase .showcase-content .showcase-heading{
     text-align: left;
     font-family: Poppins , sans-serif;
@@ -18,4 +16,10 @@
     letter-spacing: 0;
     color: #242424;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 568px){
+    #showcase .showcase-content{
+        text-align: center;
+    }
 }

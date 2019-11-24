@@ -28,18 +28,17 @@ export default function(){
         <Navbar  id="nav" expand="md" light>
             <div className="container">
                 <NavbarBrand className="navbar-brand align-self-center" href="/">FOOD.<span className="primary-color">LOGO</span></NavbarBrand>
-                <NavbarToggler light onClick={togglefn} />
+                <NavbarToggler light onClick={togglefn} className="toggler"/>
                 <Collapse isOpen={toggle} navbar>
                 <Nav className="ml-auto" navbar>
                     {links.map((link,index)=>(
                         <NavItem key={link} className="nav-item justify-content-around align-self-center">
-                            <NavLink className={activeLink === index ? "active" : ""} onClick={()=>setActiveLink(index)} href="#">{link}</NavLink>
+                            <NavLink className={activeLink === index ? "active nav-link" : ""} onClick={()=>setActiveLink(index)} href="#">{link}</NavLink>
                         </NavItem>
                     ))}
-                    <NavItem>
-                        <NavLink>
-                            <button className="text-center primary-btn align-self-center">CONTACT US</button>
-                        </NavLink>
+                    
+                    <NavItem className="nav-item justify-content-around align-self-center primary-btn">
+                        <NavLink>CONTACT US</NavLink>
                     </NavItem>
                 </Nav>
                 </Collapse>
