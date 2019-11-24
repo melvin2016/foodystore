@@ -15,7 +15,7 @@
 .ApplicationCard .card-items{
   height: 100%;
   overflow: scroll;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .ApplicationCard .total{
   margin-top:10px;

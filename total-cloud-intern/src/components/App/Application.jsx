@@ -87,7 +87,7 @@ export default ()=>{
                             render={()=>{
                                 if(availableItems.length > 0){
                                     return(
-                                        <div className="card-items">
+                                        <>
                                             <CardTitle className="card-title">Available options</CardTitle>
                                             {availableItems.map((item,index)=>(
                                                 <div onClick={setAvailableItemIndex.bind(null,index)} className={index === availableItemIndex ? "item-active card-item d-flex flex-row justify-content-between align-items-center" : "card-item d-flex flex-row justify-content-between align-items-center"}>
@@ -96,7 +96,7 @@ export default ()=>{
                                                     <div className="item-prize">${item.prize}</div>
                                                 </div>
                                             ))}
-                                        </div>
+                                        </>
                                     )
                                 }else{
                                     return(
