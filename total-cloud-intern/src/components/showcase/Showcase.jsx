@@ -10,7 +10,7 @@ function Showcase(){
                     <div className="showcase-content">
                         <h2 className="showcase-heading">Have no time to prepare <span className="primary-color">food</span>?</h2>
                         <p className="showcase-lead">Choose one of our plans, enter delivery time and enjoy delicious food without leaving your home!</p>
-                        <button className="primary-btn">Order Food</button>
+                        <button className="showcase-btn primary-btn">Order Food</button>
                     </div>
                 </div>
             </div>

@@ -18,8 +18,17 @@
     opacity: 0.5;
 }
 
+
+
 @media screen and (max-width: 568px){
-    #showcase .showcase-content{
+    #showcase .showcase-content .showcase-heading,
+    #showcase .showcase-content .showcase-lead{
         text-align: center;
+    }
+
+    #showcase .showcase-content .showcase-btn{
+        display: block;
+        max-width: fit-content;
+        margin: 0 auto;
     }
 }
