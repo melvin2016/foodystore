@@ -54,12 +54,9 @@ export default ()=>{
     const addToCart = ()=>{
         if(availableItemIndex !== null && availableItems.length > 0){
             const item = availableItems[availableItemIndex];
-            const aItems = [...availableItems];
             const sItems = [...selectedItems];
-            aItems.splice(availableItemIndex,1);
             sItems.push(item);
             setSelectedItems(sItems);
-            setAvailableItems(aItems);
             setAvailableItemIndex(null);
         }else{
             alert('Select atleast 1 item to add!');
@@ -71,12 +68,9 @@ export default ()=>{
     const removeFromCart = ()=>{
         if(selectedItemIndex!==null && selectedItems.length > 0){
             const item = selectedItems[selectedItemIndex];
-            const aItems = [...availableItems];
             const sItems = [...selectedItems];
             sItems.splice(selectedItemIndex,1);
-            aItems.push(item);
             setSelectedItems(sItems);
-            setAvailableItems(aItems);
             setSelectedItemIndex(null);
         }else{
             alert('select atleast 1 item to remove!');
@@ -93,7 +87,7 @@ export default ()=>{
                             render={()=>{
                                 if(availableItems.length > 0){
                                     return(
-                                        <>
+                                        <div className="card-items">
                                             <CardTitle className="card-title">Available options</CardTitle>
                                             {availableItems.map((item,index)=>(
                                                 <div onClick={setAvailableItemIndex.bind(null,index)} className={index === availableItemIndex ? "item-active card-item d-flex flex-row justify-content-between align-items-center" : "card-item d-flex flex-row justify-content-between align-items-center"}>
@@ -102,7 +96,7 @@ export default ()=>{
                                                     <div className="item-prize">${item.prize}</div>
                                                 </div>
                                             ))}
-                                        </>
+                                        </div>
                                     )
                                 }else{
                                     return(
@@ -133,19 +127,21 @@ export default ()=>{
                                 return(
                                     <>
                                         <CardTitle className="card-title">Your Cart</CardTitle>
-                                        {selectedItems.map((item,index)=>(
-                                            <>
-                                                <div onClick={setSelectedItemIndex.bind(null,index)} className={index === selectedItemIndex ? "item-active card-item d-flex flex-row justify-content-between align-items-center" : "card-item d-flex flex-row justify-content-between align-items-center"}>
-                                                    <img className="card-img" src={item.img} alt={item.imgAlt}/>
-                                                    <div className="item-name">{item.name}</div>
-                                                    <div className="item-prize">${item.prize}</div>
-                                                </div>
-                                                <div className="total d-flex flex-row justify-content-between align-items-center">
-                                                    <p>Total Amount: </p>
-                                                    <p>{sum}</p>
-                                                </div>
-                                                </>
-                                        ))}
+                                        <div className="card-items">
+                                            {selectedItems.map((item,index)=>(
+                                                <>
+                                                    <div onClick={setSelectedItemIndex.bind(null,index)} className={index === selectedItemIndex ? "item-active card-item d-flex flex-row justify-content-between align-items-center" : "card-item d-flex flex-row justify-content-between align-items-center"}>
+                                                        <img className="card-img" src={item.img} alt={item.imgAlt}/>
+                                                        <div className="item-name">{item.name}</div>
+                                                        <div className="item-prize">${item.prize}</div>
+                                                    </div>
+                                                    <div className="total d-flex flex-row justify-content-between align-items-center">
+                                                        <p>Total Amount: </p>
+                                                        <p>{sum}</p>
+                                                    </div>
+                                                </>   
+                                            ))}
+                                        </div>
                                     </>
                                 )
                             }else{

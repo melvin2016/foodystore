@@ -12,6 +12,11 @@
 #availableSecContainer{
   padding: 50px 0;
 }
+.ApplicationCard .card-items{
+  height: 100%;
+  overflow: scroll;
+  margin-bottom: 60px;
+}
 .ApplicationCard .total{
   margin-top:10px;
   position: absolute;
@@ -39,3 +44,4 @@
   font-size: 15px;
   opacity: 0.4;
 }
+
