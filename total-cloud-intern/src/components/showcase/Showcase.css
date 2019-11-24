@@ -1,5 +1,5 @@
 #showcase{
-    height: 80vh;
+    height: 90vh;
 }
 
 #showcase .showcase-content .showcase-heading{
@@ -23,7 +23,17 @@
 @media screen and (max-width: 568px){
     #showcase .showcase-content .showcase-heading,
     #showcase .showcase-content .showcase-lead{
+        opacity: 1;
         text-align: center;
+    }
+
+    #showcase .showcase-content .showcase-heading{
+        color: #111010;
+    }
+
+    #showcase .showcase-content .showcase-lead{
+        color: #fff;
+        opacity: 0.9;
     }
 
     #showcase .showcase-content .showcase-btn{

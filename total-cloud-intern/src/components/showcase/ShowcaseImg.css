@@ -6,11 +6,15 @@
     opacity: .84;
     height: 100vh;
     width:100%;
-    clip-path: circle(55% at 83% 13%);
+    z-index: -999;
+    clip-path: circle(50% at 83% 13%);
 }
 
 @media screen and (max-width: 568px){
     .showcase-img{
-        display: none;
+        /* Add the blur effect */
+        filter: blur(9px);
+        -webkit-filter: blur(9px);
+        clip-path: none;
     }
 }
