@@ -1,0 +1,52 @@
+/* The Whole Card */
+.ApplicationCard{
+    height: 600px;
+    min-width: 400px;
+    position: relative;
+}
+
+/* Card Title */
+.ApplicationCard .card-title{
+    margin:30px 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* Card Item */
+.ApplicationCard .card-item{
+    padding:10px 20px;
+    margin: 0 0px;
+    margin-bottom: 15px;
+    height: 100px;
+    max-width: 100%;
+}
+
+/* Card Item Hover */
+.ApplicationCard .card-item:hover{
+    background-color: #F8A22F;
+    cursor: pointer;
+}
+
+/* Card Image */
+.ApplicationCard .card-item .card-img{
+    padding: 10px 0;
+    border: none;
+    border-radius: 0;
+    max-width: 95px;
+    min-height: 100px;
+}
+
+/* Card Item Name */
+.ApplicationCard .card-item .item-name{
+    padding: 0 20px;
+    margin-right: auto;
+    font-weight: lighter;
+}
+
+/* Card Item Prize */
+.ApplicationCard .card-item .item-prize{
+    text-align: right;
+    font-weight: bolder;
+}
+
+

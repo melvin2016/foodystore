@@ -1,0 +1,24 @@
+/* Navbar */
+#nav{
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+#nav .navbar-brand{
+    font-weight: 800;
+    padding: 20px 0px;
+    color: #000;
+}
+#nav .toggler{
+    color: black;
+}
+#nav .nav-item{
+    margin: 10px 30px;
+}
+#nav .nav-item .nav-link{
+    color: #fff;
+}
+#nav .nav-item .active{
+    border-bottom: 2px solid #F8A22F;
+}

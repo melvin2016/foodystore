@@ -1,0 +1,21 @@
+#showcase{
+    height: 80vh;
+}
+#showcase .showcase-content{
+    padding-right: 100px;
+}
+#showcase .showcase-content .showcase-heading{
+    text-align: left;
+    font-family: Poppins , sans-serif;
+    font-size: 50px;
+    letter-spacing: 0;
+    color: #242424;
+}
+
+#showcase .showcase-content .showcase-lead{
+    text-align: left;
+    font: Regular 26px/41px Poppins;
+    letter-spacing: 0;
+    color: #242424;
+    opacity: 0.5;
+}

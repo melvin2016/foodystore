@@ -1,0 +1,41 @@
+#availableSec{
+    margin-top: 100px;
+    height: 100vh;
+    overflow: auto;
+    background:
+    linear-gradient(
+      rgba(9, 12, 56, 0.9), 
+      rgba(9, 12, 56, 0.9)
+    ),
+    url('../../img/img1.png') 0% 0% no-repeat padding-box;
+}
+#availableSecContainer{
+  padding: 50px 0;
+}
+.ApplicationCard .total{
+  margin-top:10px;
+  position: absolute;
+  bottom: 0px;
+  height: 50px;
+  border-radius: inherit;
+  text-align: justify;
+  padding: 25px 10px;
+  background-color: #F8A22F;
+  width: 100%;
+  font-weight: bolder;
+}
+.ApplicationCard .noItems{
+  text-align: center;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  
+}
+.ApplicationCard .noItems h2{
+  font-size: 26px;
+  opacity: 0.5;
+}
+.ApplicationCard .noItems p{
+  font-size: 15px;
+  opacity: 0.4;
+}
