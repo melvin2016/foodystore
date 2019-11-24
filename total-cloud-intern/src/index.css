@@ -13,7 +13,9 @@
     border-radius: 32px;
     color: #fff;
     border: none;
-    padding: 17px 55px;
+    padding: 10px 15px;
+    font-size: 18px;
+    min-width: 200px;
 }
 
 .text-center{

@@ -137,7 +137,7 @@ export default ()=>{
                                                     </div>
                                                     <div className="total d-flex flex-row justify-content-between align-items-center">
                                                         <p>Total Amount: </p>
-                                                        <p>{sum}</p>
+                                                        <p>${parseFloat(sum).toFixed(2)}</p>
                                                     </div>
                                                 </>   
                                             ))}
