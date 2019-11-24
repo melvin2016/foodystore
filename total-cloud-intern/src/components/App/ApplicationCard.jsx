@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-    Card
-} from 'reactstrap';
+import { Card } from 'reactstrap';
 import './ApplicationCard.css';
 
 export default ({render})=>{

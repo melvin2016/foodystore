@@ -10,29 +10,32 @@
 #availableSecContainer{
   padding: 50px 0;
 }
+
 .ApplicationCard .card-items{
   height: 100%;
   overflow: scroll;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .ApplicationCard .total{
-  margin-top:10px;
   position: absolute;
   bottom: 0px;
-  height: 50px;
+  height: 70px;
   border-radius: inherit;
-  text-align: justify;
-  padding: 25px 10px;
+  border: none;
   background-color: #F8A22F;
   width: 100%;
   font-weight: bolder;
+}
+.ApplicationCard .total .total-info{
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .ApplicationCard .noItems{
   text-align: center;
   padding: 10px;
   height: 100%;
-  width: 100%;
-  
+  width: 100%; 
 }
 .ApplicationCard .noItems h2{
   font-size: 26px;

@@ -33,7 +33,7 @@ export default function(){
                 <Nav className="ml-auto" navbar>
                     {links.map((link,index)=>(
                         <NavItem key={link} className="nav-item justify-content-around align-self-center">
-                            <NavLink className={activeLink === index ? "active nav-link" : ""} onClick={()=>setActiveLink(index)} href="#">{link}</NavLink>
+                            <NavLink className={activeLink === index ? "active nav-link" : ""} onClick={()=>setActiveLink(index)}>{link}</NavLink>
                         </NavItem>
                     ))}
                     
