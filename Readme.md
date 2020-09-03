@@ -1,3 +1,3 @@
-# TotalCloud Incorporation Internship Project
+# Foody Store
 
-> Project Link : https://totalcloudintern.herokuapp.com/
+> Project Link : https://foodystore.herokuapp.com/
